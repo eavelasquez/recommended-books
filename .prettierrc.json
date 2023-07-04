@@ -1,7 +1,22 @@
 {
-  "tabWidth": 2,
-  "semi": false,
-  "singleQuote": true,
-  "jsxSingleQuote": true,
-  "trailingComma": "none"
+	"endOfLine": "lf",
+	"overrides": [
+		{
+			"files": [
+				"*.json",
+				"*.md",
+				"*.yml"
+			],
+			"options": {
+				"useTabs": false
+			}
+		}
+	],
+	"printWidth": 100,
+	"useTabs": true,
+	"jsxSingleQuote": true,
+	"semi": false,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "none"
 }
