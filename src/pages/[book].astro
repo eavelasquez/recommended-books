@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import { startViewTransition } from '@utils/navigation'
 import { books } from '../data/books'
 
 const { book } = Astro.params
@@ -8,6 +9,8 @@ const info = books.find((b) => b.id === book)
 if (!info) {
 	Astro.redirect('/404')
 }
+
+startViewTransition()
 ---
 
 <Layout title={`Book: ${info.title}`}>
